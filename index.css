@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: auto;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    position: relative;
+    width: 58.5%;
+    /*a modifier quand le flex wrap saplique sur l'image*/
+}
+
+nav {
+    position: absolute;
+    background-color: rgba(0, 255, 255, 0);
+    /*A suprimer*/
+    height: 140px;
+    width: 100%;
+    display: flex;
+}
+
+label.logo {
+    color: white;
+    font-size: 20px;
+    margin-top: 1px;
+    line-height: 140px;
+    padding: 0 35px 0px 65px;
+}
+
+nav ul {
+    /* float: right; */
+    /* margin-right: 20px; */
+
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 140px;
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    font-weight: bolder;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    margin-top: 80px;
+    height: 2px;
+    width: 0%;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::before {
+    visibility: visible;
+    width: 50%;
+    cursor: pointer;
+}
+
+/* Container */
+
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    /* position: relative; */
+}
+
+/* Container img carousel */
+
+#container .img-carousel {
+    flex-basis: 58.5%;
+}
+
+#container .img-carousel .img-1 {
+    width: 100%;
+    /* height: 100%; */
+}
+
+#container .img-carousel .img-2,
+#container .img-carousel .img-3 {
+    display: none;
+}
+
+/* Container description */
+
+#container .description {
+    padding: 125px 0 0 100px;
+}
+
+#container .description {
+    flex-basis: 40%;
+}
+
+#container .description h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 45px;
+}
+
+#container .description .description-3,
+#container .description .description-2 {
+    display: none;
+}
+
+/* Container about-1 */
+
+#container.img-about-1 {
+    flex-basis: 20%;
+}
+
+/* Container about */
+
+#container .about {
+    flex-basis: 40%;
+}
+
+/* Container about-2 */
+
+#container.img-about-2 {
+    flex-basis: 40%;
+}
