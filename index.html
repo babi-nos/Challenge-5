@@ -10,6 +10,8 @@
     <!-- link icon, css, javascript -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index2.css" media=" only screen and (max-width: 1375px)">
+
 
     <title>Frontend Mentor | Room homepage</title>
 
@@ -41,12 +43,31 @@
 
     <div id="container">
         <div class="img-carousel">
-            <img class="img-1" src="images/desktop-image-hero-1.jpg" alt="">
-            <img class="img-2" src="images/desktop-image-hero-2.jpg" alt="">
-            <img class="img-3" src="images/desktop-image-hero-3.jpg" alt="">
+            <img class="img-slide active" src="images/desktop-image-hero-1.jpg" alt="">
+            <img class="img-slide" src="images/desktop-image-hero-2.jpg" alt="">
+            <img class="img-slide" src="images/desktop-image-hero-3.jpg" alt="">
         </div>
-        <div class="description">
-            <div class="description-1">
+        <div class="img-carousel-mobile">
+            <img class="img-slide-mobile active" src="images/mobile-image-hero-1.jpg" alt="">
+            <img class="img-slide-mobile" src="images/mobile-image-hero-2.jpg" alt="">
+            <img class="img-slide-mobile" src="images/mobile-image-hero-3.jpg" alt="">
+        </div>
+        <div class="arrow-swip-mobile">
+            <div class="left-mobile">
+                <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd" />
+                </svg>
+
+            </div>
+            <div class="right-mobile">
+                <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd" />
+                </svg>
+
+            </div>
+        </div>
+        <div class="all-description">
+            <div class="description active">
                 <h1>Discover innovative ways to decorate</h1>
                 <p>We provide unmatched quality, comfort, and style for property owners across the country.
                     Our experts combine form and function in bringing your vision to life. Create a room in your
@@ -60,21 +81,31 @@
                     </svg>
                 </a>
             </div>
-            <div class="description-2">
+            <div class="description">
                 <h1>We are available all across the globe</h1>
                 <p> With stores all over the world, it's easy for you to find furniture for your home or place of
                     business.
                     Locally, we're in most major cities throughout the country. Find the branch nearest you using our
                     store locator. Any questions? Don't hesitate to contact us today.</p>
-                <a href="">SHOP NOW</a>
+                <a href="">SHOP NOW
+                    <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" />
+                    </svg>
+                </a>
             </div>
-            <div class="description-3">
+            <div class="description">
                 <h1>Manufactured with the best materials</h1>
                 <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced
                     technology
                     to ensure that every product is made as perfect and as consistent as possible. With three decades of
                     experience in this industry, we understand what customers want for their home and office.</p>
-                <a href="">SHOP NOW</a>
+                <a href="">SHOP NOW
+                    <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" />
+                    </svg>
+                </a>
             </div>
             <div class="arrow-swip">
                 <div class="left">
@@ -91,20 +122,25 @@
                 </div>
             </div>
         </div>
-        <div class="img-about-1">
-            <img src="images/image-about-dark.jpg" alt="">
+        <div class="image-about">
+            <div class="img-about-1">
+                <img src="images/image-about-dark.jpg" alt="">
+            </div>
+            <div class="about">
+                <h1>About our furniture</h1>
+                <p>Our multifunctional collection blends design and function to suit your individual taste.
+                    Make each room unique, or pick a cohesive theme that best express your interests and what
+                    inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+                    or anything in between. Product specialists are available to help you create your dream space.</p>
+            </div>
+            <div class="img-about-2">
+                <img src="images/image-about-light.jpg" alt="">
+            </div>
         </div>
-        <div class="about">
-            <h1>About our furniture</h1>
-            <p>Our multifunctional collection blends design and function to suit your individual taste.
-                Make each room unique, or pick a cohesive theme that best express your interests and what
-                inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-                or anything in between. Product specialists are available to help you create your dream space.</p>
-        </div>
-        <div class="img-about-2">
-            <img src="images/image-about-light.jpg" alt="">
-        </div>
+
     </div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>

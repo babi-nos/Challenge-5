@@ -23,6 +23,7 @@ header {
 
 nav {
     /* line-height: 0; */
+    z-index: 8;
     position: absolute;
     background-color: rgba(0, 255, 255, 0);
     /*A suprimer*/
@@ -78,39 +79,61 @@ nav ul li a:hover::before {
 #container {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 /* Container img carousel */
 
-#container .img-carousel .img-2,
-#container .img-carousel .img-3 {
+#container .img-carousel-mobile {
     display: none;
+    /* position: relative; */
 }
 
-#container .img-carousel {
+#container .img-carousel{
+    position: relative;
     line-height: 0;
     /*Me permet de ne pas avoir de marge entre mes div*/
     flex-basis: 58.5%;
+    
 }
-
-#container .img-carousel .img-1 {
-    width: 100%;
-}
-
-/* Container description */
-
-#container .description .description-3,
-#container .description .description-2 {
+#container .img-carousel img{
     display: none;
 }
 
-#container .description {
-    padding: 110px 20px 0 95px;
-    flex-basis: 41.5%;
-    position: relative;
+#container .img-carousel img.active{
+    width: 100%;
+    display: block;
+    animation: fade 0.5s ease-in-out;
 }
 
-#container .description h1 {
+
+/* Container description */
+
+
+#container .all-description {
+    padding: 110px 45px 0 96px;
+    flex-basis: 41.5%;
+    width: 100%;
+    position: relative;
+}
+#container .all-description .description{
+    display: none;
+}
+#container .all-description .description.active{
+    display: block;
+    animation: fade 0.9s ease-in-out;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#container .all-description h1 {
     font-size: 49px;
     letter-spacing: -2px;
     margin: auto 0px;
@@ -118,48 +141,57 @@ nav ul li a:hover::before {
     line-height: 45px;
 }
 
-#container .description p {
+#container .all-description p {
     margin: 25px auto;
-    font-size: 1.01em;
+    font-size: 0.95em;
     line-height: 24px;
     padding-right: 50px;
     font-weight: 500;
     color: #a1a1a1;
 }
 
-#container .description a {
+#container .all-description a {
     font-weight: 600;
     color: black;
     font-size: 15px;
     letter-spacing: 10px;
 }
 
-#container .description a:hover {
+#container .all-description a:hover {
     color: #a1a1a1;
     fill: #a1a1a1;
 }
 
-#container .description a svg {
+#container .all-description a svg {
     margin: 5px 0 0 25px;
 }
 
 
+/*IMAGE ABOUT*/
+
+.image-about {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
 /* Container about-1 */
 
 #container.img-about-1 {
-    flex-basis: 20%;
+    flex-basis: 25%;
+    position: relative;
+    
+    /* width: 100%; */
     /* height: 90%; */
 }
 
-#container.img-about-1 img {
-
-    /* height: 100%; */
-}
 
 /* Container about */
 
 #container .about {
+    position: relative;
     flex-basis: 40%;
+    width: 100%;
     padding: 65px 50px;
 }
 
@@ -179,11 +211,17 @@ nav ul li a:hover::before {
 /* Container about-2 */
 
 #container.img-about-2 {
-    flex-basis: 40%;
+    position: relative;
+    
+    flex-basis: 35%;
+    /* width: 35px; */
 }
 
-
 /*ARROW SWIP*/
+
+.arrow-swip-mobile {
+    display: none;
+}
 
 .arrow-swip{
     position:  absolute;
@@ -194,10 +232,10 @@ nav ul li a:hover::before {
     /* width: auto; */
 }
 .arrow-swip .left{
-    padding: 26px 31.5px;
+    padding: 26px 32px;
 }
 .arrow-swip .right{
-    padding: 26px 31.5px;
+    padding: 26px 32px;
 }
 .arrow-swip .right:hover,
 .arrow-swip .left:hover{
