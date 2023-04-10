@@ -3,13 +3,16 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
+    /* height: 100%; */
     box-sizing: border-box;
 }
 
 body {
+    font-family: 'League Spartan', sans-serif;
     max-width: 1440px;
+    /* height: 100%; */
     margin: auto;
-    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 header {
@@ -19,6 +22,7 @@ header {
 }
 
 nav {
+    /* line-height: 0; */
     position: absolute;
     background-color: rgba(0, 255, 255, 0);
     /*A suprimer*/
@@ -35,12 +39,6 @@ label.logo {
     padding: 0 35px 0px 65px;
 }
 
-nav ul {
-    /* float: right; */
-    /* margin-right: 20px; */
-
-}
-
 nav ul li {
     display: inline-block;
     line-height: 140px;
@@ -50,9 +48,9 @@ nav ul li {
 
 nav ul li a {
     color: white;
-    font-size: 15px;
-    font-weight: 900;
-    font-weight: bolder;
+    font-size: 16px;
+    /* font-weight: 900; */
+    /* font-weight: bolder; */
 }
 
 nav ul li a::before {
@@ -77,63 +75,132 @@ nav ul li a:hover::before {
 
 /* Container */
 
-
 #container {
     display: flex;
     flex-wrap: wrap;
-    /* position: relative; */
 }
 
 /* Container img carousel */
-
-#container .img-carousel {
-    flex-basis: 58.5%;
-}
-
-#container .img-carousel .img-1 {
-    width: 100%;
-    /* height: 100%; */
-}
 
 #container .img-carousel .img-2,
 #container .img-carousel .img-3 {
     display: none;
 }
 
+#container .img-carousel {
+    line-height: 0;
+    /*Me permet de ne pas avoir de marge entre mes div*/
+    flex-basis: 58.5%;
+}
+
+#container .img-carousel .img-1 {
+    width: 100%;
+}
+
 /* Container description */
-
-#container .description {
-    padding: 125px 0 0 100px;
-}
-
-#container .description {
-    flex-basis: 40%;
-}
-
-#container .description h1 {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 45px;
-}
 
 #container .description .description-3,
 #container .description .description-2 {
     display: none;
 }
 
+#container .description {
+    padding: 110px 20px 0 95px;
+    flex-basis: 41.5%;
+    position: relative;
+}
+
+#container .description h1 {
+    font-size: 49px;
+    letter-spacing: -2px;
+    margin: auto 0px;
+    padding-right: 50px;
+    line-height: 45px;
+}
+
+#container .description p {
+    margin: 25px auto;
+    font-size: 1.01em;
+    line-height: 24px;
+    padding-right: 50px;
+    font-weight: 500;
+    color: #a1a1a1;
+}
+
+#container .description a {
+    font-weight: 600;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 10px;
+}
+
+#container .description a:hover {
+    color: #a1a1a1;
+    fill: #a1a1a1;
+}
+
+#container .description a svg {
+    margin: 5px 0 0 25px;
+}
+
+
 /* Container about-1 */
 
 #container.img-about-1 {
     flex-basis: 20%;
+    /* height: 90%; */
+}
+
+#container.img-about-1 img {
+
+    /* height: 100%; */
 }
 
 /* Container about */
 
 #container .about {
     flex-basis: 40%;
+    padding: 65px 50px;
+}
+
+#container .about h1 {
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 16px;
+}
+
+#container .about p{
+    color: #a1a1a1;
+    font-size: 0.93em;
+    line-height: 22px;
 }
 
 /* Container about-2 */
 
 #container.img-about-2 {
     flex-basis: 40%;
+}
+
+
+/*ARROW SWIP*/
+
+.arrow-swip{
+    position:  absolute;
+    background: #000;
+    display: flex;
+    bottom: 0px;
+    left: 0;
+    /* width: auto; */
+}
+.arrow-swip .left{
+    padding: 26px 31.5px;
+}
+.arrow-swip .right{
+    padding: 26px 31.5px;
+}
+.arrow-swip .right:hover,
+.arrow-swip .left:hover{
+    background: hsl(0, 0%, 27%);
+    cursor: pointer;
 }
