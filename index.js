@@ -68,7 +68,6 @@ left.addEventListener('click', slidePrecedent);
 leftMobile.addEventListener('click', slidePrecedent);
 
 
-
 // btn menu hamburger 
 
 function menuHamburger(){

@@ -96,6 +96,34 @@ header {
     cursor: pointer;
 }
 
+/* ARROW SWIP */
+
+.arrow-swip-mobile {
+    display: none;
+}
+
+.arrow-swip {
+    position: absolute;
+    background: #000;
+    display: flex;
+    bottom: 0px;
+    left: 0;
+}
+
+.arrow-swip .left {
+    padding: 26px 32.5px;
+}
+
+.arrow-swip .right {
+    padding: 26px 32.5px;
+}
+
+.arrow-swip .right:hover,
+.arrow-swip .left:hover {
+    background: hsl(0, 0%, 27%);
+    cursor: pointer;
+}
+
 /* CONTAINER */
 
 #container {
@@ -206,7 +234,6 @@ header {
 
 /* CONTAINER ABOUT */
 
-
 #container .about {
     position: relative;
     flex-basis: 50%;
@@ -229,36 +256,7 @@ header {
 
 /* CONTAINER ABOUT-2 */
 
-
 #container .img-about-2 {
     position: relative;
     flex-basis: 25%;
-}
-
-/* ARROW SWIP */
-
-.arrow-swip-mobile {
-    display: none;
-}
-
-.arrow-swip {
-    position: absolute;
-    background: #000;
-    display: flex;
-    bottom: 0px;
-    left: 0;
-}
-
-.arrow-swip .left {
-    padding: 26px 32.5px;
-}
-
-.arrow-swip .right {
-    padding: 26px 32.5px;
-}
-
-.arrow-swip .right:hover,
-.arrow-swip .left:hover {
-    background: hsl(0, 0%, 27%);
-    cursor: pointer;
 }
