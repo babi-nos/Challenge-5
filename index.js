@@ -76,9 +76,10 @@ function menuHamburger(){
 
     containerAfter.style.opacity = 0.5
 
+
     btnClose.addEventListener('click', (e) => {
         if(e){
-            navItem.style.left = '101%';
+            navItem.style.left  = "-101%";
             containerAfter.style.opacity = 1
         }
     })

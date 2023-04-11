@@ -80,7 +80,6 @@ body {
     flex-wrap: wrap;
     position: relative;
     height: auto;
-    /* overflow: hidden; */
 }
 
 #container .img-carousel {
