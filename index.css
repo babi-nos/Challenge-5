@@ -1,20 +1,23 @@
 @media only screen and (max-width: 1375px) {
-    .nav-links{
+    .nav-links {
         font-size: 2.5em;
     }
 }
+
 @media only screen and (max-width: 975px) {
-    .nav-links{
+    .nav-links {
         font-size: 2em;
     }
 }
+
 @media only screen and (max-width: 650px) {
-    .nav-links{
+    .nav-links {
         font-size: 1em;
     }
 }
+
 @media only screen and (max-width: 350px) {
-    .nav-links{
+    .nav-links {
         font-size: 0.7em;
     }
 }
@@ -53,21 +56,25 @@ header {
 .navbar .logo {
     padding-right: 40px;
 }
-.navbar .nav-links ul{
+
+.navbar .nav-links ul {
     display: flex;
     align-items: center;
 }
-.navbar .nav-links ul a{
+
+.navbar .nav-links ul a {
     color: white;
     padding: 15px;
 }
 
-.btn-close{
+.btn-close {
     display: none;
 }
-.oac{
+
+.oac {
     position: relative;
 }
+
 .nav-links .oac a::before {
     content: " ";
     position: absolute;
@@ -104,16 +111,17 @@ header {
     display: none;
 }
 
-#container .img-carousel{
+#container .img-carousel {
     position: relative;
     flex-basis: 58.5%;
-    
+
 }
-#container .img-carousel img{
+
+#container .img-carousel img {
     display: none;
 }
 
-#container .img-carousel img.active{
+#container .img-carousel img.active {
     width: 100%;
     display: block;
     animation: fade 0.5s ease-in-out;
@@ -127,19 +135,22 @@ header {
     width: 100%;
     position: relative;
 }
-#container .all-description .description{
+
+#container .all-description .description {
     display: none;
 }
-#container .all-description .description.active{
+
+#container .all-description .description.active {
     display: block;
     animation: fade 0.9s ease-in-out;
 }
 
-@keyframes fade{
-    from{
+@keyframes fade {
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
@@ -210,7 +221,7 @@ header {
     font-size: 16px;
 }
 
-#container .about p{
+#container .about p {
     color: #a1a1a1;
     font-size: 0.93em;
     line-height: 22px;
@@ -230,23 +241,24 @@ header {
     display: none;
 }
 
-.arrow-swip{
-    position:  absolute;
+.arrow-swip {
+    position: absolute;
     background: #000;
     display: flex;
     bottom: 0px;
     left: 0;
 }
-.arrow-swip .left{
+
+.arrow-swip .left {
     padding: 26px 32.5px;
 }
-.arrow-swip .right{
+
+.arrow-swip .right {
     padding: 26px 32.5px;
 }
+
 .arrow-swip .right:hover,
-.arrow-swip .left:hover{
+.arrow-swip .left:hover {
     background: hsl(0, 0%, 27%);
     cursor: pointer;
 }
-
-

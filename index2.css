@@ -1,9 +1,9 @@
-body{
+body {
     background-color: black;
 }
 
 
-.navbar{
+.navbar {
     padding: 0;
     height: 120px;
     align-items: center;
@@ -17,7 +17,7 @@ body{
 }
 
 
-.nav-links{
+.nav-links {
     position: absolute;
     background: #ffffff;
     width: 100%;
@@ -29,21 +29,25 @@ body{
     align-items: center;
     transition: 0.5s;
 }
-.navbar .nav-links ul{
+
+.navbar .nav-links ul {
     flex-basis: 20%;
 }
-.navbar .nav-links ul a{
+
+.navbar .nav-links ul a {
     color: #000000;
     font-weight: bolder;
 }
 
-.btn-close{
+.btn-close {
     display: block;
 }
-.btn-close svg{
+
+.btn-close svg {
     margin-left: 35px;
 }
-.line-menu  {
+
+.line-menu {
     position: absolute;
     width: 37px;
     height: 34px;
@@ -59,7 +63,6 @@ body{
     height: 2px;
     background-color: #fff;
     margin-bottom: 7px;
-    /* margin-left: 40px; */
 }
 
 .nav-links .oac a::before {
@@ -77,7 +80,7 @@ body{
     flex-wrap: wrap;
     position: relative;
     height: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #container .img-carousel {
