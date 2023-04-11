@@ -1,7 +1,7 @@
 body{
     background-color: black;
-    overflow: hidden;
 }
+
 
 .navbar{
     padding: 0;
@@ -13,7 +13,7 @@ body{
     position: relative;
     text-align: center;
     margin: auto;
-    padding-right: 25px;
+    padding-right: 0px;
 }
 
 
@@ -21,13 +21,13 @@ body{
     position: absolute;
     background: #ffffff;
     width: 100%;
-    /* padding: 50px; */
     top: 0;
     left: -101%;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.5s;
 }
 .navbar .nav-links ul{
     flex-basis: 20%;
@@ -71,11 +71,13 @@ body{
 
 /*CONTAINER IMG*/
 #container {
+    overflow: hidden;
     animation: fade 2s;
     display: block;
     flex-wrap: wrap;
     position: relative;
     height: auto;
+    overflow: hidden;
 }
 
 #container .img-carousel {
