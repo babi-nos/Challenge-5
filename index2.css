@@ -1,10 +1,11 @@
 header {
     position: relative;
     width: 100%;
-    /*a modifier quand le flex wrap saplique sur l'image*/
 }
 
+/*CONTAINER IMG*/
 #container {
+    animation: fade 2s ;
     display: block;
     flex-wrap: wrap;
     position: relative;
@@ -14,18 +15,99 @@ header {
 #container .img-carousel {
     display: none;
 }
+
 #container .img-carousel-mobile {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+#container .img-carousel-mobile img {
+    display: none;
+}
+
+#container .img-carousel-mobile img.active {
+    width: 100%;
     display: block;
 }
 
-.arrow-swip{
+/*ARROW MOBILE*/
+
+.arrow-swip {
     display: none;
 }
+
 .arrow-swip-mobile {
     display: block;
-    position:  relative;
+    position: absolute;
     background: #000;
     display: flex;
-    bottom: 0px;
-    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.arrow-swip-mobile .left-mobile,
+.arrow-swip-mobile .right-mobile {
+    padding: 14px 22px;
+}
+
+
+.arrow-swip-mobile .right-mobile:hover,
+.arrow-swip-mobile .left-mobile:hover {
+    background: hsl(0, 0%, 27%);
+    cursor: pointer;
+}
+
+/* Container description */
+
+
+#container .all-description {
+    padding: 50px;
+}
+
+#container .all-description h1 {
+    padding-right: 0px;
+}
+
+#container .all-description p {
+    font-size: 0.99em;
+    padding-right: 0px;
+}
+
+#container .all-description a {
+    font-size: 18px;
+}
+
+
+/*IMAGE ABOUT*/
+
+.image-about {
+    display: block;
+    width: 100%;
+}
+
+/* Container about-1 */
+
+#container .img-about-1 img{
+    width: 100%;
+}
+
+/* Container about */
+
+#container .about {
+    padding: 50px;
+}
+
+#container .about h1 {
+    padding-bottom: 20px;
+}
+
+#container .about p{
+    font-size: 1em;
+}
+
+/* Container about-2 */
+
+#container .img-about-2 img {
+    width: 100%;
 }

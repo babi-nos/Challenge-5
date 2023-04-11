@@ -3,58 +3,63 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    /* height: 100%; */
     box-sizing: border-box;
 }
 
 body {
     font-family: 'League Spartan', sans-serif;
     max-width: 1440px;
-    /* height: 100%; */
     margin: auto;
-
+    animation: fade 2s ;
 }
 
 header {
     position: relative;
-    width: 58.5%;
-    /*a modifier quand le flex wrap saplique sur l'image*/
-}
-
-nav {
-    /* line-height: 0; */
-    z-index: 8;
-    position: absolute;
-    background-color: rgba(0, 255, 255, 0);
-    /*A suprimer*/
-    height: 140px;
     width: 100%;
-    display: flex;
 }
 
-label.logo {
-    color: white;
-    font-size: 20px;
-    margin-top: 1px;
-    line-height: 140px;
-    padding: 0 35px 0px 65px;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 140px;
-    margin: 0 15px;
-    position: relative;
-}
-
-nav ul li a {
-    color: white;
+.navbar {
+    position: absolute;
+    z-index: 8;
+    width: 100%;
+    height: 50px;
+    padding: 70px 65px;
+    left: 50%;
+    transform: translate(-50%);
     font-size: 16px;
-    /* font-weight: 900; */
-    /* font-weight: bolder; */
 }
 
-nav ul li a::before {
+.navbar-toggler {
+    width: 47px;
+    height: 34px;
+    background-color: #7eb44400;
+    border: none;
+}
+
+.navbar-toggler .line {
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.navbar .container-fluid {
+    --bs-gutter-x: 0rem;
+}
+
+.navbar .nav-item {
+    padding-left: 18px;
+}
+.navbar .navbar-brand{
+    padding-right: 5px;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+/* nav ul li a::before {
     content: "";
     position: absolute;
     background-color: rgb(255, 255, 255);
@@ -72,9 +77,9 @@ nav ul li a:hover::before {
     visibility: visible;
     width: 50%;
     cursor: pointer;
-}
+} */
 
-/* Container */
+/* CONTAINER */
 
 #container {
     display: flex;
@@ -82,17 +87,14 @@ nav ul li a:hover::before {
     position: relative;
 }
 
-/* Container img carousel */
+/* CONTAINER IMG CAROUSSEL */
 
 #container .img-carousel-mobile {
     display: none;
-    /* position: relative; */
 }
 
 #container .img-carousel{
     position: relative;
-    line-height: 0;
-    /*Me permet de ne pas avoir de marge entre mes div*/
     flex-basis: 58.5%;
     
 }
@@ -106,9 +108,7 @@ nav ul li a:hover::before {
     animation: fade 0.5s ease-in-out;
 }
 
-
-/* Container description */
-
+/* CONTAINER DESCRIPTION */
 
 #container .all-description {
     padding: 110px 45px 0 96px;
@@ -155,6 +155,7 @@ nav ul li a:hover::before {
     color: black;
     font-size: 15px;
     letter-spacing: 10px;
+    text-decoration: none;
 }
 
 #container .all-description a:hover {
@@ -163,9 +164,8 @@ nav ul li a:hover::before {
 }
 
 #container .all-description a svg {
-    margin: 5px 0 0 25px;
+    margin: 0px 0 0 25px;
 }
-
 
 /*IMAGE ABOUT*/
 
@@ -175,22 +175,19 @@ nav ul li a:hover::before {
     display: flex;
 }
 
-/* Container about-1 */
+/* CONTAINER ABOUT-1 */
 
-#container.img-about-1 {
+#container .img-about-1 {
     flex-basis: 25%;
     position: relative;
-    
-    /* width: 100%; */
-    /* height: 90%; */
 }
 
+/* CONTAINER ABOUT */
 
-/* Container about */
 
 #container .about {
     position: relative;
-    flex-basis: 40%;
+    flex-basis: 50%;
     width: 100%;
     padding: 65px 50px;
 }
@@ -208,16 +205,15 @@ nav ul li a:hover::before {
     line-height: 22px;
 }
 
-/* Container about-2 */
+/* CONTAINER ABOUT-2 */
 
-#container.img-about-2 {
+
+#container .img-about-2 {
     position: relative;
-    
-    flex-basis: 35%;
-    /* width: 35px; */
+    flex-basis: 25%;
 }
 
-/*ARROW SWIP*/
+/* ARROW SWIP */
 
 .arrow-swip-mobile {
     display: none;
@@ -229,13 +225,12 @@ nav ul li a:hover::before {
     display: flex;
     bottom: 0px;
     left: 0;
-    /* width: auto; */
 }
 .arrow-swip .left{
-    padding: 26px 32px;
+    padding: 26px 32.5px;
 }
 .arrow-swip .right{
-    padding: 26px 32px;
+    padding: 26px 32.5px;
 }
 .arrow-swip .right:hover,
 .arrow-swip .left:hover{
