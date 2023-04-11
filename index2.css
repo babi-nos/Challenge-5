@@ -1,11 +1,77 @@
-header {
-    position: relative;
-    width: 100%;
+body{
+    background-color: black;
+    overflow: hidden;
 }
+
+.navbar{
+    padding: 0;
+    height: 120px;
+    align-items: center;
+}
+
+.navbar .logo {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    padding-right: 25px;
+}
+
+
+.nav-links{
+    position: absolute;
+    background: #ffffff;
+    width: 100%;
+    /* padding: 50px; */
+    top: 0;
+    left: -101%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .nav-links ul{
+    flex-basis: 20%;
+}
+.navbar .nav-links ul a{
+    color: #000000;
+    font-weight: bolder;
+}
+
+.btn-close{
+    display: block;
+}
+.btn-close svg{
+    margin-left: 35px;
+}
+.line-menu  {
+    position: absolute;
+    width: 37px;
+    height: 34px;
+    background-color: #7eb44400;
+    border: none;
+    left: 7%;
+    top: 37%;
+}
+
+.line-menu .line {
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 7px;
+    /* margin-left: 40px; */
+}
+
+.nav-links .oac a::before {
+    display: none;
+}
+
+
+
 
 /*CONTAINER IMG*/
 #container {
-    animation: fade 2s ;
+    animation: fade 2s;
     display: block;
     flex-wrap: wrap;
     position: relative;
@@ -88,7 +154,7 @@ header {
 
 /* Container about-1 */
 
-#container .img-about-1 img{
+#container .img-about-1 img {
     width: 100%;
 }
 
@@ -102,7 +168,7 @@ header {
     padding-bottom: 20px;
 }
 
-#container .about p{
+#container .about p {
     font-size: 1em;
 }
 
@@ -111,3 +177,14 @@ header {
 #container .img-about-2 img {
     width: 100%;
 }
+
+
+/* #container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #00000061;
+} */
